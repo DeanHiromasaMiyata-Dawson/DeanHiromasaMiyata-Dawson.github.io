@@ -25,17 +25,17 @@ const weapons = [
 const monsters = [
   {
     name: "slime",
-    level: 2,
+    level: 1,
     health: 15
   },
   {
     name: "fanged beast",
-    level: 8,
+    level: 5,
     health: 60
   },
   {
     name: "dragon",
-    level: 20,
+    level: 10,
     health: 300
   }
 ]
