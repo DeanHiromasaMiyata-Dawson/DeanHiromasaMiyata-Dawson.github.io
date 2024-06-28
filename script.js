@@ -48,8 +48,8 @@ const locations = [
   },
   {
     name: "store",
-    "button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square"],
-    "button functions": [buyHealth, buyWeapon, goTown],
+    "button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Sell Weapon (Gain 15 gold)", "Go to town square"],
+    "button functions": [buyHealth, buyWeapon, sellWeapon, goTown],
     text: "You enter the store."
   },
   {
