@@ -60,6 +60,12 @@ const locations = [
     text: "You enter the cave. You see some monsters."
   },
   {
+    name: "credits",
+    "button text": ["author", "technologies used", "surprise", "!@#$%^&*()_+"],
+    "button functions": [author, tech, fakeEasterEgg, easterEgg],
+    text: "Thank you for playing this game!"
+  },
+  {
     name: "fight",
     "button text": ["Attack", "Block", "Dodge", "Run"],
     "button functions": [attack, block, dodge, goTown],
@@ -88,12 +94,6 @@ const locations = [
     "button text": ["2", "8", "13", "Go to town square?"],
     "button functions": [pickTwo, pickEight, pickThirteen, goTown],
     text: "You find a secret game. Pick a number above. Ten numbers will be randomly chosen between 0 and 10. If the number you choose matches one of the random numbers, you win!"
-  },
-  {
-    name: "credits",
-    "button text": ["author", "technologies used", "surprise", "!@#$%^&*()_+"],
-    "button functions": [author, tech, fakeEasterEgg, easterEgg],
-    text: "Thank you for playing this game!"
   }
 ];
 
@@ -129,7 +129,7 @@ function goCave() {
 }
 
 function credits() {
-  update(locations[8]);
+  update(locations[3]);
 }
 
 function buyHealth() {
@@ -191,7 +191,7 @@ function fightDragon() {
 }
 
 function goFight() {
-  update(locations[3]);
+  update(locations[4]);
   monsterHealth = monsters[fighting].health;
   monsterStats.style.display = "block";
   monsterName.innerText = monsters[fighting].name;
@@ -247,7 +247,7 @@ function defeatMonster() {
   xp += monsters[fighting].level;
   goldText.innerText = gold;
   xpText.innerText = xp;
-  update(locations[4]);
+  update(locations[5]);
 }
 
 function lose() {
@@ -283,7 +283,7 @@ function fakeEasterEgg() {
 }
 
 function easterEgg() {
-  update(locations[7]);
+  update(locations[8]);
 }
 
 function pickTwo() {
