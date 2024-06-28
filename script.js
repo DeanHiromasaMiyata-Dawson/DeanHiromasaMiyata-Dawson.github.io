@@ -87,6 +87,12 @@ const locations = [
     "button text": ["2", "8", "13", "Go to town square?"],
     "button functions": [pickTwo, pickEight, pickThirteen, goTown],
     text: "You find a secret game. Pick a number above. Ten numbers will be randomly chosen between 0 and 10. If the number you choose matches one of the random numbers, you win!"
+  },
+  {
+    name: "credits",
+    "button text": ["author", "technologies used", "surprise", "!@#$%^&*()_+"],
+    "button functions": [author, tech, fakeEasterEgg, easterEgg],
+    text: "Thank you for playing this game!"
   }
 ];
 
@@ -236,6 +242,10 @@ function defeatMonster() {
   update(locations[4]);
 }
 
+function credits() {
+  text.innerText = "Thank you for playing Dragon Repeller!"
+}
+
 function lose() {
   update(locations[5]);
 }
@@ -254,6 +264,18 @@ function restart() {
   healthText.innerText = health;
   xpText.innerText = xp;
   goTown();
+}
+
+function author() {
+  text.innerText = "Hi! My name is Dean Hiromasa Miyata-Dawson. I am a computer science student at the Georgia Institute of Technology (or Georgia Tech), and I made this game to review everything that I had learned in HTML, CSS, JavaScript, and React.";
+}
+
+function tech() {
+  text.innerText = "I used HTML, CSS, JavaScript, Bootstrap, React, and Github to make this game.";
+}
+
+function fakeEasterEgg() {
+  text.innerText = "Sike! There's no surprise here!";
 }
 
 function easterEgg() {
