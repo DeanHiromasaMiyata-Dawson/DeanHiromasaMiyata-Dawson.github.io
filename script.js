@@ -30,12 +30,12 @@ const monsters = [
   },
   {
     name: "fanged beast",
-    level: 5,
+    level: 7,
     health: 60
   },
   {
     name: "dragon",
-    level: 10,
+    level: 15,
     health: 300
   }
 ]
@@ -225,7 +225,7 @@ function dodge() {
 }
 
 function defeatMonster() {
-  gold += Math.floor(monsters[fighting].level * 10);
+  gold += Math.floor(monsters[fighting].level * 7);
   xp += monsters[fighting].level;
   goldText.innerText = gold;
   xpText.innerText = xp;
