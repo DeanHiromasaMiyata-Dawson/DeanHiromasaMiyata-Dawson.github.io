@@ -128,6 +128,10 @@ function goCave() {
   update(locations[2]);
 }
 
+function credits() {
+  update(locations[8]);
+}
+
 function buyHealth() {
   if (gold >= 10) {
     gold -= 10;
@@ -244,10 +248,6 @@ function defeatMonster() {
   goldText.innerText = gold;
   xpText.innerText = xp;
   update(locations[4]);
-}
-
-function credits() {
-  text.innerText = "Thank you for playing Dragon Repeller!"
 }
 
 function lose() {
